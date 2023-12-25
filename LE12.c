@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 int main()
 {
     int a[3][3], i, j, b[3][3], k, l, m, n, c[3][3];
@@ -41,32 +40,21 @@ int main()
         }
         printf("\n");
     }
-    
+    // to multiply two 3*3 matrices
+    printf("the multiplication of these two matrix is\n");
     for ( m = 0; m < 3; m++)
     {
         for ( n = 0; n < 3; n++)
         {
-            c[m][n] = a[m][n] + b[m][n];
-            
-        }   
-    }
-
-    printf("The sum of these two matrix is this matrix: \n");
-    for (m = 0; m < 3 ; m++)
-    {
-        for ( n = 0; n < 3 ; n++)
-        {
+            c[m][n] = 0;
+            for ( k = 0; k < 3; k++)
+            {
+                c[m][n] = a[m][k] * b[k][n];
+            }
             printf("%d    ", c[m][n]);
-        }
-        printf("\n");
+            
+        }  
+        printf("\n"); 
     }
-    // to find adjoint of these two matrices
-    printf("The Adjoint of 1st matrix is:\n");
-    for ( i = 0; i<1 ;i++)
-    {
-       printf("%d", (a[2][2] * a[3][3]) - (a[3][2] * a[2][3]));
-        
-    }
-    
     return 0;
 }
