@@ -10,7 +10,6 @@ int main()
         {
             scanf("%d", &a[i][j]);
         }
-        
     }
     printf("Enter the data in similiar way for the second matrix.\n");
     for (k = 0; k < 3; k++)
@@ -19,7 +18,6 @@ int main()
         {
             scanf("%d", &b[k][l]);
         }
-        
     }
     printf("the first matrix is: \n");
     for ( i = 0; i < 3; i++)
@@ -30,7 +28,6 @@ int main()
         }
         printf("\n");
     }
-    
     printf("the second matrix is:\n");
     for ( k = 0; k < 3; k++)
     {
@@ -52,7 +49,6 @@ int main()
                 c[m][n] = a[m][k] * b[k][n];
             }
             printf("%d    ", c[m][n]);
-            
         }  
         printf("\n"); 
     }

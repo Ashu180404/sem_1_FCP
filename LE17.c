@@ -9,19 +9,16 @@ int main()
         perror("Error opening file");
         return 1;
     }
-    
     fputs("\nIt's me", fp);
     fclose(fp);
-
     fp = fopen("Test.txt", "a");
     if (fp == NULL)
     {
         perror("Error opening file");
         return 1;
     }
-    fprintf(fp, "\n%sit's you", "a");
+    fprintf(fp, "\nit's you");
     fclose(fp);
-    
     fp = fopen("test.txt", "r");
     if (fp == NULL)
     {

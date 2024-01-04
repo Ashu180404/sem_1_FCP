@@ -9,4 +9,5 @@ int main()
         f = f * i;
     }
     printf("Factorial of %d = %d", n, f);
+    return 0;
 }

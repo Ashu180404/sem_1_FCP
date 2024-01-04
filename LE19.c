@@ -2,7 +2,7 @@
 int main()
 {
     int a[5] = {1, 2, 3, 4, 5}, n;
-    printf("Enter the number to find");
+    printf("Enter the number to find:\n");
     scanf("%d", &n);
     for (int i = 0; i < 5; i++)
     {
