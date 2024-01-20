@@ -24,8 +24,8 @@ int main()
     case '*':
         printf("Multiplication : %f", a * b);
         break;
-    case '^':
-        printf("a power b : %f", pow(a, b));
+    case '%':
+        printf("%f", a % b);
         break;
     default:
         printf("Invalid Operator");
